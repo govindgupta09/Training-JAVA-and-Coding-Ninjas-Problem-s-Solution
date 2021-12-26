@@ -1,0 +1,12 @@
+// Program to sum two numbers..
+
+public class Example {
+    public static void main(String []args){
+        int a;      // Initialisation of variables..
+        int b =10;  //Initialisation and declaration of variables..
+        a=15;       // Declaration of variables..
+        int s;
+        s = a+b;
+        System.out.print("Sum of "+a+" and "+b+" is "+s+" ...!"); 
+    }
+}
