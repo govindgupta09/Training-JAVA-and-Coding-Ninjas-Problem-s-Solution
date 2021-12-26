@@ -1,0 +1,13 @@
+// Program to Sum two numbers..
+
+import java.util.Scanner;  // Predefined class to take user inputs. ie. Scanner class inside, util package inside java.
+public class Example {
+    public static void main(String []args){
+         Scanner kb = new Scanner(System.in); // Object of Scanner class to use scanner & refarence variable is 'kb' that represents an object of Scanner.
+         System.out.println("Enter two integer numbers :- ");
+         int a = kb.nextInt(); // 'kb' is object of scanner class..
+         int b = kb.nextInt(); // nextInt fxn returns Integer value that are typed by keyboard by using object of scanner class ie. 'kb'
+         int s = a+b;
+         System.out.println("Sum of "+a+" and "+b+" is "+s+" ..!");
+    }
+}
