@@ -1,0 +1,32 @@
+// In this Program we learn..
+
+/**
+1. How to create a class.
+2. How to create an object.
+3. How to access member of the object.
+4. Where main fxn should used be.
+5. Name of the java file. 
+**/
+
+class Box {
+    private int length, breadth , height;// instance variable means variables of object ..
+    public void setDimension(int l,int b, int h) // User-defined Public function recieving three arguments..
+    {
+        length=l;
+        breadth=b; height=h;
+    } 
+    public void showDimension() // User-defined fxn ..
+    {
+        System.out.println("Length = "+length);
+        System.out.println("Breadth = "+breadth);
+        System.out.println("Height = "+height);
+    }
+}
+public class Class_box {
+    public static void main(String []args){
+
+        Box smallBox = new Box();
+        smallBox.setDimension(12,10,5);
+        smallBox.showDimension();
+    }
+}
