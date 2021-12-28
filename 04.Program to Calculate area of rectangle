@@ -1,0 +1,14 @@
+//  Program to Calculate area of rectangle..
+
+import java.util.Scanner;
+
+public class Example{
+    public static void main(String []args){
+        Scanner  input = new Scanner(System.in);
+        System.out.print("Enter length & breadth of raqctangle : ");
+        int l = input.nextInt();
+        int b = input.nextInt();
+        int ar = l*b;
+        System.out.println("Area of Rectangle is : "+ar);
+    }
+}
