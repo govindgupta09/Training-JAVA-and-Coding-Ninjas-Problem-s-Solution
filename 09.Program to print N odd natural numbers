@@ -1,0 +1,16 @@
+// Program to print N odd natural numbers..
+
+import java.util.Scanner;
+public class Example{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the number :  ");
+        int num = input.nextInt();
+        int i = 1;
+        System.out.print(num+" Odd Numbers are :-");
+        while(i!=num){
+            System.out.print(" "+(2*i-1));
+            i++;
+        }
+    }
+}
