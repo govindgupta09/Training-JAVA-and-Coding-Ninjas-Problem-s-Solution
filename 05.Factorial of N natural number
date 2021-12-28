@@ -1,0 +1,22 @@
+// Factorial of N natural number..
+
+import java.util.Scanner;
+
+class Example{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number upto print factorial :-");
+        int n = input.nextInt();
+        if(n>=0)
+        {
+            int fact=1;
+            while(n!=0){
+                fact = fact*n;
+                n--;
+            }
+            System.out.print("Factorial is : "+fact);
+        }
+        else
+        System.out.print("Invalid input  :) ");
+    }
+} 
