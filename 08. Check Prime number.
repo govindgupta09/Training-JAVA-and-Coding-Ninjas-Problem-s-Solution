@@ -1,0 +1,18 @@
+// Check number is prime or not..
+
+import java.util.Scanner;
+public class Example{
+    public static void main(String args[]){
+       Scanner input =  new Scanner(System.in);
+       System.out.print("Enter a number : ");
+       int num =input.nextInt(); 
+       int i;
+       for(i=2;i<num;i++)
+           if(num%i==0)
+           break;
+        if(i==num)
+        System.out.println(num+ " is Prime Number.");
+        else
+        System.out.println(num+" is not Prime Number.");
+    }
+}
