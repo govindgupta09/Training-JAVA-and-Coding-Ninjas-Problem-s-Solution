@@ -1,0 +1,12 @@
+// Numbers in reverse order..
+
+public class Example{
+    public static void main(String args[]){
+        int i=10;
+        System.out.print("Number in reverse order is : ");
+        while(i!=0){
+            System.out.print(" "+i);
+            i--;
+        }
+    }
+}
