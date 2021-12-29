@@ -1,0 +1,20 @@
+// Program to Print Fibonacci number...
+
+import java.util.Scanner;
+public class Example{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter any natural number:  ");
+        int num = input.nextInt();
+        int a = 0;
+        int b = 1;
+        int count = 2;
+        while(count <= num){
+            int temp = b;
+            b = a+b;
+            a = temp;
+            count++;
+        }
+        System.out.println(num+"th Fibonacci number is: "+b);
+    }
+}
