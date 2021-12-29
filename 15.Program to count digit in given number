@@ -1,0 +1,20 @@
+// Program to count digit in given number...
+
+import java.util.Scanner;
+public class Example{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter any natural number:  ");
+        int num = input.nextInt();
+        int rem = 3;
+        int count = 0;
+        while(num>0){
+            rem = num%10;
+            if(rem==3){
+                count++;
+            }
+            num = num/10;
+        }
+        System.out.println(count+" times "+3+" in your given number ");
+    }
+}
