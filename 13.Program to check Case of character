@@ -1,0 +1,16 @@
+// Program to check Case of character..
+
+import java.util.Scanner;
+public class Example{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter any charecter :  ");
+        char ch = input.next().trim().charAt(0);
+        if(ch>='a' && ch<='z'){
+            System.out.println(ch+" is in LowerCase");
+        }
+        else{
+            System.out.println(ch+" is in UpperCase");
+        }
+    }
+}
