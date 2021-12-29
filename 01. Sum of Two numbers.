@@ -7,6 +7,6 @@ public class Example {
         a=15;       // Declaration of variables..
         int s;
         s = a+b;
-        System.out.print("Sum of "+a+" and "+b+" is "+s+" ...!"); 
+        System.out.print("Sum of "+a+" and "+b+" is "+s+" ...!");  
     }
 }
