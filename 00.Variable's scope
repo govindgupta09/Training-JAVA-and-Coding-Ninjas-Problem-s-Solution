@@ -24,6 +24,7 @@ public class Test
 
 /* 
 // Output
+//The above code uses this keyword to differentiate between the local and class variables.
 
 Test.x: 22
 t.x: 22
