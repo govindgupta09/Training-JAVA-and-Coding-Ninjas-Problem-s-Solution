@@ -1,0 +1,16 @@
+## Write a program to print multiplication table of n
+
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner inp=new Scanner(System.in);
+        int a=inp.nextInt();
+        int n=1;
+        while(n<=10){
+            System.out.println(a*n);
+            n+=1;
+        }
+
+	}
+}
