@@ -1,0 +1,23 @@
+'''
+Factors
+
+Write a program to print all the factors of a number other than 1 and the number itself.
+'''
+
+import java.util.*;
+public class Solution {
+    
+    public static void main(String[] args) {
+        
+        Scanner inp=new Scanner(System.in);
+        int num=inp.nextInt();
+        int n=2;
+        while(n<=num-1){
+            if(num%n==0){
+                System.out.print(n+" ");
+            }
+            n+=1;
+        }
+        
+    }
+}
