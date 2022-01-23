@@ -1,0 +1,35 @@
+'''
+Code : Character Pattern
+
+Pattern for N = 4
+
+A
+BC
+CDE
+DEFG
+
+'''
+
+import java.util.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner inp=new Scanner(System.in);
+        int n=inp.nextInt();
+        int i=1;
+        while(i<=n){
+            int j=i;
+            char ch=(char)('A'+i-1);
+            while(j>0){
+                System.out.print(ch);
+				ch=(char)(ch+1);
+                j-=1;
+            }
+            System.out.println();
+            i+=1;
+        }
+        
+	}
+
+}
