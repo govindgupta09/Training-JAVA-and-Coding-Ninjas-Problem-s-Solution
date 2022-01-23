@@ -1,0 +1,26 @@
+'''
+Code : Reverse Number Pattern
+'''
+
+
+import java.util.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner inp=new Scanner(System.in);
+        int n=inp.nextInt();
+        int i=1;
+        while(i<=n){
+            int j=i;
+            while(j>0){
+                System.out.print(j);
+                j-=1;
+            }
+            System.out.println();
+            i+=1;
+        }
+        
+	}
+
+}
