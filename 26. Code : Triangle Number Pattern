@@ -1,0 +1,26 @@
+'''
+Code : Triangle Number Pattern
+'''
+
+
+import java.util.*;
+public class Solution {
+
+
+	public static void main(String[] args) {
+		Scanner inp=new Scanner(System.in);
+        int n=inp.nextInt();
+        int i=1;
+        while(i<=n){
+            int j=1;
+            while(j<=i){
+                System.out.print(i);
+                j+=1;
+            }
+            System.out.println();
+            i+=1;
+        }
+        
+	}
+
+}
