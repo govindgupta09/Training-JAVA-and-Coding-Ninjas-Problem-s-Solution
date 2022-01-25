@@ -1,0 +1,26 @@
+'''
+Terms of AP
+
+Write a program to print first x terms of the series 3N + 2 which are not multiples of 4.
+
+'''
+
+
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner inp=new Scanner(System.in);
+        int n=inp.nextInt();
+        int count=1;
+        for(int i=1;count<=n;i++){
+            int ap=3*i+2;
+            if(ap%4==0){
+                continue;
+            }
+            System.out.print(ap+" ");
+            count++;
+        }
+
+	}
+}
