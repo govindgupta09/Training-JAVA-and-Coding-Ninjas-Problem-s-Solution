@@ -1,0 +1,20 @@
+'''
+Decimal to Binary
+'''
+
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner inp= new Scanner(System.in);
+	    long i=1, binary=0, rem;
+		long num = inp.nextLong();
+		while(num!=0){
+		    rem = num%2;
+		    binary += i*rem;   
+		    num = num/2;
+		    i=i*10;
+		}
+		System.out.println(binary);
+	}
+}
