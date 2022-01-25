@@ -1,0 +1,21 @@
+'''
+Binary to decimal
+'''
+
+import java.util.*;
+public class Main {
+	
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int count=0;
+        int num=0;
+		while(n>0){
+            int dig=n%10;
+            num=num+dig*(int)(Math.pow(2,count));
+            count++;
+            n=n/10;
+        }
+        System.out.println(num);
+	}
+}
