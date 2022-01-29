@@ -1,0 +1,24 @@
+Rotate array
+
+You have been given a random integer array/list(ARR) of size N. Write a function that rotates the given array/list by D elements(towards the left).
+ Note:
+Change in the input array/list itself. You don't need to return or print the elements.
+
+=============================================================================================================================
+
+public class Solution {  
+
+    public static void rotate(int[] arr, int d) {
+        int n=arr.length;
+        int[] arr1 = new int[n];
+        int i;
+		for(i=0;i<n;i++)
+            arr1[i]=arr[i];
+		
+		for(i = 0;i <n- d;i++)
+            arr[i] = arr1[i+d];
+		
+		for(int j = i;j <n;j++) 
+			arr[j] = arr1[d -n+ j];
+    }
+}
