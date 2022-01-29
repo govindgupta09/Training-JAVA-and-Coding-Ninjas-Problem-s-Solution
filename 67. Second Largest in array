@@ -1,0 +1,35 @@
+Second Largest in array
+
+You have been given a random integer array/list(ARR) of size N. You are required to find and return the second largest element present in the array/list.
+If N <= 1 or all the elements are same in the array/list then return -2147483648 or -2 ^ 31(It is the smallest value for the range of Integer)
+
+
+============================================================================================================
+
+public class Solution {  
+
+    public static int secondLargestElement(int[] arr) {
+        if((arr.length<=1)||(arr[0]==arr[arr.length-1]))
+            return -2147483648;
+		
+		int largest=Integer.MIN_VALUE;
+		int secondLargest=Integer.MIN_VALUE;
+		for(int j=0;j<arr.length;j++) {
+			if(arr[j]>largest) {
+			secondLargest=largest;
+			largest=arr[j];
+			}
+            else if(arr[j]==largest) {
+				continue;
+			}
+            else if(arr[j]<largest) {
+				if(arr[j]>secondLargest) {
+					secondLargest=arr[j];
+				}
+			}
+		}
+		return secondLargest;
+    }
+}
+
+
