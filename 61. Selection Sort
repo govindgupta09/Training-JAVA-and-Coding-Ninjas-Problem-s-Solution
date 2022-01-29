@@ -1,0 +1,26 @@
+'''
+Selection Sort
+
+Provided with a random integer array/list(ARR) of size N, you have been required to sort this array using 'Selection Sort'.
+ Note:
+Change in the input array/list itself. You don't need to return or print the elements.
+'''
+
+public class Solution {  
+
+    public static void selectionSort(int[] arr) {
+    	for(int round=0;round<arr.length-1;round++){
+            int min=Integer.MAX_VALUE;
+            int minIndex=-1;
+            for(int i=round;i<arr.length;i++){
+                if(arr[i]<min){
+                    min=arr[i];
+                    minIndex=i;
+                }
+            }
+            int temp=arr[round];
+            arr[round]=arr[minIndex];
+            arr[minIndex]=temp;
+        }
+    }   
+}
