@@ -1,0 +1,31 @@
+Reverse each word in a String.
+
+INPUT:     Welcome to Coding Ninjas
+OUTPUT:    emocleW ot gnidoC sajniN
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+public class Solution {
+	public static String reverseWordWise(String input) {
+		int i=0;
+        int currentWordStart=0;
+        String ans="";
+		for(;i<input.length();i++){
+            if(input.charAt(i)==' '){
+                int currentWordEnd=i-1;
+                String reversedWord="";
+                for(int j=currentWordStart;j<=currentWordEnd;j++){
+                    reversedWord=input.charAt(j)+reversedWord;
+                }
+                ans+=reversedWord+" ";
+                currentWordStart=i+1;
+            }
+        }
+        int currentWordEnd=i-1;
+        String reversedWord="";
+        for(int j=currentWordStart;j<=currentWordEnd;j++){
+            reversedWord=input.charAt(j)+reversedWord;
+        }
+        ans+=reversedWord;
+        return ans;
+	}
+}
