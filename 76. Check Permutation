@@ -1,0 +1,89 @@
+Check Permutation
+
+For a given two strings, 'str1' and 'str2', check whether they are a permutation of each other or not.
+Permutations of each other
+Two strings are said to be a permutation of each other when either of the string's characters can be rearranged so that it becomes identical to the other one.
+
+Example: 
+str1= "sinrtg" 
+str2 = "string"
+
+The character of the first string(str1) can be rearranged to form str2 and hence we can say that the given strings are a permutation of each other.
+
+
++==============================================================================++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++===============
+
+public class Solution {
+
+	public static boolean isPermutation(String str1, String str2) {
+        
+        int count=0;
+		for(int i=0;i<str1.length();i++){
+            for(int j=0;j<str2.length();j++){
+                if(str1.charAt(i)!=str2.charAt(j)){
+                    continue;
+                }
+                else{
+                    count++;
+                }
+            }
+        }
+        if(count!=str2.length() || str1.length()!=str2.length()){
+            return false;
+        }
+        else{
+            return true;
+        }
+	}
+
+}
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+             OR
+=========================================================================================================================================
+
+import java.util.Scanner;
+public class solution {
+public static String arrangeString(String inputString) {
+        int i,j;
+		String str = "";
+		    j = 97;
+			while(j <= 122) {
+			i = 0;
+			do {
+				if((int)inputString.charAt(i) == j) {
+					str = str + (char)j;
+				}
+				i++;
+			}while(i < inputString.length());
+			j++;
+		}
+			return str;
+		
+}
+	public static boolean isPermutation(String input1, String input2) {
+	    // Write your code here
+boolean result = true;;
+		if(input1.length() != input2.length())
+		  result = false;
+		else {
+			String str1 = arrangeString(input1);
+			String str2 = arrangeString(input2);
+			for(int i = 0;i < str1.length();i++) {
+				if(str1.charAt(i) != str2.charAt(i)) {
+					result = false;
+					break;
+				}
+			}
+		}
+			return result;
+	}
+	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		String input1 = s.nextLine();
+		String input2 = s.nextLine();
+		boolean result = isPermutation(input1,input2);
+System.out.print(result);
+	}
+}
