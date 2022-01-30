@@ -1,0 +1,30 @@
+String Palindrome
+
+Given a string, determine if it is a palindrome, considering only alphanumeric characters.
+Palindrome
+A palindrome is a word, number, phrase, or other sequences of characters which read the same backwards and forwards.
+
+
+public class Solution {
+
+	public static boolean isPalindrome(String str) {
+     /*
+        String revstr="";
+		for(int i=0;i<str.length();i++){
+            revstr=str.charAt(i)+revstr;
+        }
+        return(str.equals(revstr));
+	*/
+        
+        boolean isReverse=true;
+		for(int i=0,j=str.length()-1;i<(str.length()/2);i++,j--){
+            if(str.charAt(i) != str.charAt(j)){
+				isReverse = false;
+				break;
+			}
+		}
+		return isReverse;
+        
+    }
+
+}
