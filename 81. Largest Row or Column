@@ -46,7 +46,7 @@ public class Solution {
 				index = i;
 			}
 		
-		for(int j = 0;j < input[0].length;j++)
+		for(int j = 0;j < input[0].length;j++){
 			if(maxSum < colSum(input,j)) {
 				maxSum = colSum(input,j);
 				dim = "";
